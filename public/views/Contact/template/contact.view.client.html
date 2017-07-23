@@ -1,0 +1,75 @@
+<div class="container" align="middle" id="contact">
+    <legend class="title">Contact</legend>
+    <fieldset>
+        <form class="form-horizontal container" name="contactForm">
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="text" placeholder="First Name.." name="firstName" id="firstName" ng-model="ctrl.contact.firstName" minlength="3" ng-pattern="/^[a-zA-Z]*$/" ng-class="contactForm.firstName.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.firstName.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.firstName.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="text" placeholder="Last Name.." name="lastName" id="lastName" minlength="3" ng-model="ctrl.contact.lastName" ng-pattern="/^[a-zA-Z]*$/" ng-class="contactForm.lastName.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.lastName.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.lastName.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="text" placeholder="Company.." name="company" id="company" ng-model="ctrl.contact.company" minlength="2" ng-pattern="/^[a-zA-Z0-9\s]*$/" ng-class="contactForm.company.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.company.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.company.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="text" placeholder="Role.." name="role" id="role" ng-model="ctrl.contact.role" minlength="2" ng-pattern="/^[a-zA-Z0-9\s]*$/" ng-class="contactForm.role.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.role.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.role.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="number" placeholder="Phone.." name="phone" id="phone" ng-model="ctrl.contact.phone" minlength="10" maxlength="10" ng-pattern="/^[0-9]*$/" ng-class="contactForm.phone.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.phone.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.phone.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <input type="email" placeholder="Email.." name="email" id="email" ng-model="ctrl.contact.email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" ng-class="contactForm.email.$valid ? 'success':'error'" class="form-control" required>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.email.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.email.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <textarea type="text" placeholder="Message.." name="message" id="message" ng-model="ctrl.contact.message" class="form-control" required></textarea>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <span ng-show="contactForm.message.$valid" class="glyphicon glyphicon-ok" style="color:green"></span>
+                    <span ng-hide="contactForm.message.$valid" class="glyphicon glyphicon-remove" style="color:red"></span>
+                </div>
+            </div>
+            <div class="form-group" ng-show="contactForm.$valid">
+                <div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 col-md-offset-5 col-md-2 col-lg-offset-5 col-lg-2">
+                    <button type="button" id="submit" ng-click="ctrl.submitForm()" class="form-control btn btn-primary">SUBMIT</button>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+</div>

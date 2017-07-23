@@ -1,0 +1,11 @@
+
+<div ng-repeat="college in colleges" class="slide container" destroy-and-rebuild>
+    <span class="title">{{college.college}}</span>
+    <div class="row">
+        <span><h4><em>{{college.startDate | date: 'MMMM, yyyy'}} - {{college.endDate | date: 'MMMM, yyyy'}}</em></h4></span>
+    </div>
+    <div class="row">
+        <span><p><em>{{college.degree}}</em></p></span>
+    </div>
+</div>
+

@@ -1,0 +1,348 @@
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: relative;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: 0.9;
+    align-items: center;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    background: black;
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.error{
+    box-shadow: inset 0 0 10px red;
+    -webkit-box-shadow: inset 0 0 10px red;
+    -o-box-shadow: inset 0 0 10px red;
+    border: 1px solid red;
+}
+
+.success{
+    box-shadow: inset 0 0 10px green;
+    -webkit-box-shadow: inset 0 0 10px green;
+    -o-box-shadow: inset 0 0 10px green;
+    border: 1px solid green;
+}
+
+nav{
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none;
+    font-size: 1.5em;
+    border: 0 transparent !important;
+}
+
+#summary{
+    font: 500 1.5em Roboto, sans-serif;
+}
+
+#dp .caption{
+    color: white;
+    font: 400 1.5em Roboto, sans-serif;
+}
+
+#dpPhones .caption{
+    color: white;
+    font: 400 1.5em Roboto, sans-serif;
+}
+
+#dp .caption:hover{
+    color: #e05252;
+}
+
+#dpPhones .caption:hover{
+    color: #e05252;
+}
+
+
+#dp{
+    position: absolute;
+    bottom: 40px;
+    display: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+#dpPhones{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+}
+
+#dpPhones .thumbnail{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px){
+    #dp{
+        display: flex;
+        align-items: center;
+    }
+    #dpPhones{
+        display: none;
+    }
+
+    #skillsPhone{
+        display: none;
+    }
+
+    #skills{
+        display: inline-block;
+    }
+    #contact{
+        background: url("../img/contactBackground.jpg") no-repeat;
+    }
+    #templates .title{
+        font: small-caps 500 4em/1em Roboto, sans-serif;
+    }
+    #skills>div:nth-child(odd), #address>div:nth-child(even), #follow>div:nth-child(odd){
+        font: 300 2em Helvetica, sans-serif;
+    }
+
+    #skills>div:nth-child(even), #address>div:nth-child(odd), #follow>div:nth-child(even){
+        font: 300 1.5em Helvetica, sans-serif;
+    }
+
+    #skills>div:first-child, #address>div:first-child, #follow>div:first-child{
+        font: small-caps 500 3em Helvetica, sans-serif;
+    }
+}
+
+#welcome{
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    font-size: 150px;
+    font-weight: 900;
+    font-family: Roboto, Helvetica, sans-serif;
+
+    animation: fadein 10s;
+    -webkit-animation: fadein 10s;
+}
+#lco{
+    animation-name: welcomeAnimation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+
+    -webkit-animation-name: welcomeAnimation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: normal;
+}
+
+@keyframes fadein {
+    from{ opacity: 0 }
+    to{ opacity: 1 }
+}
+
+@-webkit-keyframes fadein {
+    from{ opacity: 0 }
+    to{ opacity: 1 }
+}
+
+@keyframes welcomeAnimation {
+    0%{
+        background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #c94a4e 50%, #9952e0 75%, #e05252 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    25%{
+        background: -webkit-linear-gradient(330deg, #e05252 0%, #e05252 25%, #99e052 50%, #c94a4e 75%, #9952e0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    50%{
+        background: -webkit-linear-gradient(330deg, #9952e0 0%, #e05252 25%, #e05252 50%, #99e052 75%, #c94a4e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    75%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #9952e0 25%, #e05252 50%, #e05252 75%, #99e052 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    100%{
+        background: -webkit-linear-gradient(330deg, #99e052 0%, #c94a4e 25%, #9952e0 50%, #e05252 75%, #e05252 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+}
+
+@-webkit-keyframes welcomeAnimation {
+    0%{
+        background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #c94a4e 50%, #9952e0 75%, #e05252 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    25%{
+        background: -webkit-linear-gradient(330deg, #e05252 0%, #e05252 25%, #99e052 50%, #c94a4e 75%, #9952e0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    50%{
+        background: -webkit-linear-gradient(330deg, #9952e0 0%, #e05252 25%, #e05252 50%, #99e052 75%, #c94a4e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    75%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #9952e0 25%, #e05252 50%, #e05252 75%, #99e052 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+    100%{
+        background: -webkit-linear-gradient(330deg, #99e052 0%, #c94a4e 25%, #9952e0 50%, #e05252 75%, #e05252 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:  transparent;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #skills, #address, #follow{
+        align-items: center;
+    }
+    #contact{
+        background: slategray;
+    }
+    #welcome{
+        top: 25%;
+        font-size: 3em;
+        font-weight: 700;
+    }
+    #templates .title{
+        font: small-caps 300 2em/1em Roboto, sans-serif;
+    }
+    #address>div:nth-child(odd), #follow>div:nth-child(odd){
+        font: 300 1.5em Helvetica, sans-serif;
+    }
+
+    #address>div:nth-child(even), #follow>div:nth-child(even){
+        font: 300 1em Helvetica, sans-serif;
+    }
+
+    #address>div:first-child, #follow>div:first-child{
+        font: small-caps 700 2em Helvetica, sans-serif;
+    }
+    #skillsPhone>div:nth-child(odd){
+        font: 500 1.5em Helvetica, sans-serif;
+    }
+    #skillsPhone>div:nth-child(even){
+        font: 400 1.25em Helvetica, sans-serif;
+    }
+    #skillsPhone>div:first-child{
+        font: small-caps 700 2em Helvetica, sans-serif;
+    }
+
+    #skills{
+        display: none;
+    }
+
+    #skillsPhone{
+        display: inline-block;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #connect{
+        text-align: center;
+    }
+    .form-group>div:last-child>span{
+        display: none;
+    }
+}
+
+.thumbnail{
+    background-color: transparent;
+    border: 0;
+}
+
+#templates{
+    align-items: center;
+    text-align: center;
+}
+
+#skills img{
+    max-height: 200px;
+    max-width: 400px;
+    margin: 20px;
+    clear: both;
+}
+
+#footer{
+    animation-name: footerAnimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: footerAnimation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: normal;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes footerAnimation {
+    0%{
+        background: -webkit-linear-gradient(330deg, #ffffff 0%, #c94a4e 25%, #c94a4e 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    25%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #ffffff 25%, #c94a4e 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    50%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #ffffff 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    75%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #c94a4e 50%, #ffffff 75%, #c94a4e 100%);
+    }
+    100%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #c94a4e 50%, #c94a4e 75%, #ffffff 100%);
+    }
+}
+
+@-webkit-keyframes footerAnimation {
+    0%{
+        background: -webkit-linear-gradient(330deg, #ffffff 0%, #c94a4e 25%, #c94a4e 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    25%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #ffffff 25%, #c94a4e 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    50%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #ffffff 50%, #c94a4e 75%, #c94a4e 100%);
+    }
+    75%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #c94a4e 50%, #ffffff 75%, #c94a4e 100%);
+    }
+    100%{
+        background: -webkit-linear-gradient(330deg, #c94a4e 0%, #c94a4e 25%, #c94a4e 50%, #c94a4e 75%, #ffffff 100%);
+    }
+}
+
+/* CONTACT VIEW */
+#contact{
+    height: inherit;
+    width: inherit;
+    background-size: cover;
+    font: 400 1.5em Helvetica, sans-serif;
+}
+
+#contact legend{
+    font: 500 2em Helvetica, sans-serif;
+    color: white;
+}
+
+#contact input, #contact textarea{
+    border: 0;
+    border-radius: 0;
+}
