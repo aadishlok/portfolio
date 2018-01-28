@@ -5,7 +5,7 @@ var express= require('express');
 var bodyParser= require('body-parser');
 
 var mongoose= require('mongoose');
-mongoose.connect('mongodb://localhost:27017/portfolio');
+mongoose.connect('mongodb://aadishlok:Shlok#117@ds111123.mlab.com:11123/portfolio');
 
 
 var app= express();
@@ -22,6 +22,6 @@ var pf= require('./private/app');
 pf(app);
 
 var port = process.env.PORT || 3000;
-app.listen(port,'localhost', function () {
+app.listen(port, function () {
     console.log(new Date().toISOString() + " server started on port "+port);
 });
