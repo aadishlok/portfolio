@@ -8,7 +8,11 @@
         .controller('ProjectsController', function ($scope, ProjectsService) {
 
             var ctrl= $scope;
-            ctrl.projects= {};
+            ctrl.projects= {
+                title: '',
+                location: '',
+                description: []
+            };
 
             function init(){
                 ProjectsService.getAllProjects()

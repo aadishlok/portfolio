@@ -129,6 +129,7 @@ nav{
     animation: fadein 10s;
     -webkit-animation: fadein 10s;
 }
+
 #lco{
     animation-name: welcomeAnimation;
     animation-duration: 10s;
@@ -155,27 +156,27 @@ nav{
     0%{
         background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #c94a4e 50%, #9952e0 75%, #e05252 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     25%{
         background: -webkit-linear-gradient(330deg, #e05252 0%, #e05252 25%, #99e052 50%, #c94a4e 75%, #9952e0 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     50%{
         background: -webkit-linear-gradient(330deg, #9952e0 0%, #e05252 25%, #e05252 50%, #99e052 75%, #c94a4e 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     75%{
         background: -webkit-linear-gradient(330deg, #c94a4e 0%, #9952e0 25%, #e05252 50%, #e05252 75%, #99e052 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     100%{
         background: -webkit-linear-gradient(330deg, #99e052 0%, #c94a4e 25%, #9952e0 50%, #e05252 75%, #e05252 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
 }
 
@@ -183,27 +184,27 @@ nav{
     0%{
         background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #c94a4e 50%, #9952e0 75%, #e05252 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     25%{
         background: -webkit-linear-gradient(330deg, #e05252 0%, #e05252 25%, #99e052 50%, #c94a4e 75%, #9952e0 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     50%{
         background: -webkit-linear-gradient(330deg, #9952e0 0%, #e05252 25%, #e05252 50%, #99e052 75%, #c94a4e 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     75%{
         background: -webkit-linear-gradient(330deg, #c94a4e 0%, #9952e0 25%, #e05252 50%, #e05252 75%, #99e052 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
     100%{
         background: -webkit-linear-gradient(330deg, #99e052 0%, #c94a4e 25%, #9952e0 50%, #e05252 75%, #e05252 100%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color:  transparent;
+        -webkit-text-fill-color:  white;
     }
 }
 

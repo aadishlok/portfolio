@@ -7,7 +7,14 @@
         .controller('ProfessionalController', function ($scope, ProfessionalService) {
 
             var ctrl= $scope;
-            ctrl.companies= {};
+            ctrl.companies= {
+                title: '',
+                role: '',
+                startDate: '',
+                endDate: '',
+                company: '',
+                description: []
+            };
 
             function init() {
                 ProfessionalService.getAllProfessions()

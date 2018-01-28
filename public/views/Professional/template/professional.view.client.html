@@ -5,10 +5,10 @@
         <span><em>{{company.startDate | date: 'MMMM, yyyy'}} - {{company.endDate | date: 'MMMM, yyyy'}}</em></span>
     </div>
     <div class="row">
-        <span><h5><strong>{{company.title}}</strong></h5></span>
+        <span><h4><strong>{{company.title}}</strong></h4></span>
     </div>
     <div class="row">
-        <span><h6>{{company.role}}</h6></span>
+        <span><h4>{{company.role}}</h4></span>
     </div>
     <div class="row" ng-repeat="d in company.description">
         <span class="glyphicon glyphicon-unchecked"><p>{{d}}</p></span>

@@ -1,6 +1,9 @@
 
 <div class="slide" ng-repeat="project in projects" destroy-and-rebuild>
     <span class="title">{{project.title}}</span>
+    <div class="row">
+        <span><h3><strong>{{project.location}}</strong></h3></span>
+    </div>
     <div class="row" ng-repeat="d in project.description">
         <span class="glyphicon glyphicon-unchecked"><em>{{d}}</em></span>
     </div>
